@@ -1,15 +1,16 @@
 # Generating Git hub connection
-Download Git or GitBash (Mac and Linux has it already)
-Run GitBash
-cd to a place you please (Desktop works too)
-Example: cd Desktop
-Make a folder (Anywhere you want)
-Example: mkdir Sparta
-Enter the folder cd Sparta
-Generate a key
-ssh-keygen -t rsa -b 4096 -C "your_email@email.com"
-Save as "key.ssh"
-Make a passphase (Good practice)
+
+## Download Git or GitBash (Mac and Linux has it already)
+### Run GitBash
+- cd to a place you please (Desktop works too)
+- Example: cd Desktop
+- Make a folder (Anywhere you want)
+- Example: mkdir Sparta
+- Enter the folder cd Sparta
+- Generate a key
+```ssh-keygen -t rsa -b 4096 -C "your_email@email.com"```
+- Save as "key.ssh"
+-Make a passphase (Good practice)
 SHA256:YOUR_KEY_HERE your_email@email.com
 Check that key.ssh exists with ls in your Sparta folder
 Ensure you have git-agent eval $(ssh-agent -s)
