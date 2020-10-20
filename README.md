@@ -1,4 +1,4 @@
-# Generating Git hub connection
+# Generating Git hub conction
 Download Git or GitBash (Mac and Linux has it already)
 Run GitBash
 cd to a place you please (Desktop works too)
@@ -27,7 +27,7 @@ Save it => Profit £££
 Hide your key.ssh and key.ssh.pub somewhere safe
 NEVER LEAVE IT IN YOUR REPO FOLDER
 
-Repos
+# Repos
 Go to Github make a new repo
 With your folder from before open in Bash
 git init => Initialize a repo
@@ -51,3 +51,20 @@ Essentially everything again apart from init and branch if you not switching bra
 Notes
 Github Desktop skips the entire Repos section
 Allows for easy push, pull, branch selection etc etc.
+
+- copy the ssh key from localhost with 
+
+```cat id_rsa.pub
+- paste the public key on your github in settings GPG SSH key option in your profile manue
+
+- once saved go back to your terminal
+
+- run the git hub command
+
+```git add .
+
+```git commit -m " msg"
+
+```git push -u origin main
+
+- go back to github repo to verfiy the changes and connections
